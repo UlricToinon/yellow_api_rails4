@@ -6,23 +6,23 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'yellow_api_rails4'
+    gem 'yellow_api_rails4', git: 'git://github.com/UlricToinon/yellow_api_rails4.git'
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install yellow_api_rails4
+    $ bundle install
 
 ## Usage
 
-TODO: Write usage instructions here
+Coming soon
+
+## Inspiration
+
+This Ruby gem was inspired by an old existing gem by [ianbishop](https://github.com/ianbishop/yellow_api)
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/yellow_api_rails4/fork )
+1. Fork it ( https://github.com/UlricToinon/yellow_api_rails4/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

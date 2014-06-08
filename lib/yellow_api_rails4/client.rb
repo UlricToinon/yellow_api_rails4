@@ -11,9 +11,20 @@ module YellowApiRails4
 
     # Include for PlaceAPI's methods
     include YellowApiRails4::Client::FindBusiness
+    include YellowApiRails4::Client::FindDealer
+    include YellowApiRails4::Client::GetBusinessDetails
+    include YellowApiRails4::Client::GetTypeAhead
 
     # Include for DealsAPI's methods
     # Comming soon
+    include YellowApiRails4::Client::Categorie
+    include YellowApiRails4::Client::ContentType
+    include YellowApiRails4::Client::Coupon
+    include YellowApiRails4::Client::Deal
+    include YellowApiRails4::Client::SearchByGeolocation
+    include YellowApiRails4::Client::SearchByMerchant
+    include YellowApiRails4::Client::SearchByNational
+    
 
 
     attr_accessor *Config::VALID_OPTIONS_KEYS

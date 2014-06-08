@@ -1,16 +1,16 @@
 module YellowApiRails4
   class Client
 
-    module SearchByGeolocation
+    module SearchByNational
 
-      def search_by_geolocation(longitude, latitude, keyword, radius = 20, type = "", options = {})
+      def search_by_national(keyword, type = "", options = {})
         options[:radius] = (radius > 0)? radius : 20
         options[:keyword] = normalize_keywords(keyword)
         if type.to_s == "deal" || type.to_s == "coupon" || type.to_s == "deal coupon"
           options[:type] = type
         end
 
-        get("/search/geo/#{longitude}/#{latitude}", options)
+        get("/search/national", options)
       end
 
       def normalize_keywords(keyword)

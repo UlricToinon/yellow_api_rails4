@@ -1,6 +1,18 @@
 require 'yellow_api_rails4/connector/connexion'
 require 'yellow_api_rails4/configuration'
+
 require 'yellow_api_rails4/methods/places/find_business'
+require 'yellow_api_rails4/methods/places/find_dealer'
+require 'yellow_api_rails4/methods/places/get_business_details'
+require 'yellow_api_rails4/methods/places/get_type_ahead'
+
+require 'yellow_api_rails4/methods/places/categorie'
+require 'yellow_api_rails4/methods/places/content_type'
+require 'yellow_api_rails4/methods/places/coupon'
+require 'yellow_api_rails4/methods/places/deal'
+require 'yellow_api_rails4/methods/places/search_by_geolocation'
+require 'yellow_api_rails4/methods/places/search_by_merchant'
+require 'yellow_api_rails4/methods/places/search_by_national'
 
 module YellowApiRails4
   class Client

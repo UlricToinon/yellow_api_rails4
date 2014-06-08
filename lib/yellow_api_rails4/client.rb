@@ -1,5 +1,7 @@
-# require 'yellow_api_rails4/connector/connexion'
-# require 'yellow_api_rails4/methods/places/find_business'
+require 'yellow_api_rails4/connector/connexion'
+require 'yellow_api_rails4/configuration'
+require 'yellow_api_rails4/methods/places/find_business'
+
 module YellowApiRails4
   class Client
     # Include for connection to the API

@@ -14,7 +14,7 @@ module YellowApiRails4
       def connection(options={})
         is_sandbox = options.fetch(:is_sandbox, is_sandbox)
 
-        url = is_sandbox? options.fetch(:sandbox_url, sandbox_url) : options.fetch(:prod_url, prod_url)
+        url = (is_sandbox)? options.fetch(:sandbox_url, sandbox_url): options.fetch(:prod_url, prod_url)
 
         @connection ||= Faraday.new(:url => url) do |faraday|
           faraday.request :url_encoded              # form-encode POST params

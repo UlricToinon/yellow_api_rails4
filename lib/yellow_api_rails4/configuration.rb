@@ -1,4 +1,4 @@
-require 'yellow_api/version'
+require 'yellow_api_rails4/version'
 
 module YellowApiRails4
 
@@ -50,11 +50,11 @@ module YellowApiRails4
     def reset(api_to_use)
       if api_to_use.to_s == "deals"
         self.prod_url = DEFAULT_DEALS_PROD_URL
-        self.is_sandbox = DEFAULT_SANDBOX_ENABLED #No sandbox for Deals API
+        self.is_sandbox = DEFAULT_IS_SANDBOX #No sandbox for Deals API
       else
-        self.prod_url = DEFAULT_PROD_URL
-        self.sandbox_url = DEFAULT_SANDBOX_URL
-        self.is_sandbox = DEFAULT_SANDBOX_ENABLED
+        self.prod_url = DEFAULT_PLACE_PROD_URL
+        self.sandbox_url = DEFAULT_PLACE_SANDBOX_URL
+        self.is_sandbox = DEFAULT_IS_SANDBOX
       end
       self.apikey = DEFAULT_APIKEY
       self.fmt = DEFAULT_RESPONSE_FORM
